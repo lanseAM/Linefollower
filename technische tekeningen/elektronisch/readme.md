@@ -1,2 +1,3 @@
 
-[Plan B schema.pdf](https://github.com/lanseAM/Linefollower/files/9780610/Plan.B.schema.pdf)
+file:///C:/Users/lanse/Downloads/Plan%20B%20schema%20easyeda.pdf
+
