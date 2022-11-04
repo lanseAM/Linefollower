@@ -1,2 +1,2 @@
 
-file:///C:/Users/lanse/Downloads/Plan%20B%20schema%20easyeda.pdf
+[Plan B schema easyeda.pdf](https://github.com/lanseAM/Linefollower/files/9938307/Plan.B.schema.easyeda.pdf)
