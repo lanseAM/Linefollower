@@ -4,7 +4,8 @@ minimale hard- en software waarmee aangetoond wordt dat duplex kan gecommuniceer
 ### configuratie
 Voor de communicatie werd een HC-06 gebruikt met de app MIT AI2 Companion op een smartphone
 ### opmerkingen
-![image](https://user-images.githubusercontent.com/114751410/199984666-7941ed86-f995-478f-a70d-89d56fc940be.png) elektronisch schema
+elektronisch schema
+![image](https://user-images.githubusercontent.com/114751410/199984666-7941ed86-f995-478f-a70d-89d56fc940be.png) 
 
 code
 
