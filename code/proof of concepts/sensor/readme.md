@@ -2,13 +2,13 @@
 
 minimale hard- en software die aantoont dat minimaal 6 sensoren onafhankelijk van elkaar kunnen uitgelezen worden en dat daarbij een zo groot mogelijk bereik van de AD converter benut wordt (indien van toepassing)
 
-1) Bouw de opstelling als volgt
+### Opstelling 
 ![image](https://github.com/lanseAM/Linefollower/assets/114751410/2c8191bf-f1e6-4c46-91ac-64f4e4cd9ab0)
 
 
 
-
-2) Verbindt de arduino Mega met je pc en upload deze code: 
+### Arduino code
+Verbindt de arduino Mega met je pc en upload deze code: 
 
 #include <QTRSensors.h>
 
