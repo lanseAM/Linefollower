@@ -2,55 +2,63 @@
 
 minimale hard- en software die aantoont dat minimaal 6 sensoren onafhankelijk van elkaar kunnen uitgelezen worden en dat daarbij een zo groot mogelijk bereik van de AD converter benut wordt (indien van toepassing)
 
+1) Bouw de opstelling als volgt
+![image](https://github.com/lanseAM/Linefollower/assets/114751410/2c8191bf-f1e6-4c46-91ac-64f4e4cd9ab0)
 
-code: 
 
-//Code for the QRE1113 Analog board
-//Outputs via the serial terminal - Lower numbers mean more reflected
+
+
+2) Verbindt de arduino Mega met je pc en upload deze code: 
 
 #include <QTRSensors.h>
 
-// This example is designed for use with six analog QTR sensors. These
-// reflectance sensors should be connected to analog pins A0 to A5. The
-// sensors' emitter control pin (CTRL or LEDON) can optionally be connected to
-// digital pin 2, or you can leave it disconnected and remove the call to
-// setEmitterPin().
-//
-// The main loop of the example reads the raw sensor values (uncalibrated). You
-// can test this by taping a piece of 3/4" black electrical tape to a piece of
-// white paper and sliding the sensor across it. It prints the sensor values to
-// the serial monitor as numbers from 0 (maximum reflectance) to 1023 (minimum
-// reflectance).
+// Define the number of sensors and their pins
+#define NUM_SENSORS 6
+#define SENSOR_PINS {A6, A5, A4, A3, A2, A1}
 
+// Create an instance of the QTRSensors class
 QTRSensors qtr;
 
-const uint8_t SensorCount = 6;
-uint16_t sensorValues[SensorCount];
+// Array to store sensor readings
+unsigned int sensorValues[NUM_SENSORS];
 
-void setup()
-{
-  // configure the sensors
-  qtr.setTypeAnalog();
-  qtr.setSensorPins((const uint8_t[]){A0, A1, A2, A3, A4, A5}, SensorCount);
- 
-
+void setup() {
+  // Initialize serial communication
   Serial.begin(9600);
+
+  // Configure sensor pins
+  unsigned char sensorPins[NUM_SENSORS] = SENSOR_PINS;
+
+  // Configure sensor settings (optional)
+  qtr.setTypeRC();
+  qtr.setSensorPins(sensorPins, NUM_SENSORS);
+
+  // Calibrate the sensors
+  qtr.calibrate();
+
+  // Display calibration minimum and maximum values
+  for (int i = 0; i < NUM_SENSORS; i++) {
+    Serial.print("Sensor ");
+    Serial.print(i);
+    Serial.print(": ");
+  }
+
+  delay(2000);  // Allow time to observe calibration values
 }
 
-
-void loop()
-{
-  // read raw sensor values
+void loop() {
+  // Read sensor values
   qtr.read(sensorValues);
 
-  // print the sensor values as numbers from 0 to 1023, where 0 means maximum
-  // reflectance and 1023 means minimum reflectance
-  for (uint8_t i = 0; i < SensorCount; i++)
-  {
+  // Print sensor values
+  for (int i = 0; i < NUM_SENSORS; i++) {
     Serial.print(sensorValues[i]);
     Serial.print('\t');
   }
   Serial.println();
 
-  delay(250);
+  delay(100);  // Adjust delay as needed
 }
+
+3) In de seriele monitor krijg je nu de values van de sensoren te zien.
+   
