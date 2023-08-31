@@ -1,27 +1,33 @@
 # LineFollower
 <br />
-lege repository die je als template kan gebruiken om een eigen repository te starten voor uw linefollower project
+
 <br />
 <br />
 [picture]
 <br />
+## Eerste keer 3 toeren
+
+
+https://github.com/lanseAM/Linefollower/assets/114751410/bc804c22-d5cf-49de-9b66-86b99ae69b0b
+
+
 <br />
   
 ## specifications
 <br />
-microcontroller:
+microcontroller: ATmega2560
 <br />
-motors: 
+motors: 30:1 Micro Metal Gearmotor HP 6V
 <br />
-h-bridge:
+h-bridge: DRV8833
 <br />
-sensors:
+sensors: QTR-8A 
 <br />
-batteries:
+batteries: 18650
 <br />
-wireless communication:
+wireless communication: HC-05
 <br />
-distance sensor - motors:
+distance sensor - motors: 10cm
 <br />
 weight:
 <br />
