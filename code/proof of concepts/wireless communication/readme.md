@@ -7,7 +7,7 @@ Voor de communicatie plan B werd een HC-05 (HC-06 plan A)gebruikt met de app ser
 ![image](https://github.com/lanseAM/Linefollower/assets/114751410/c8709df8-33d1-4279-b0cb-9af0c225a805)
 
 
-### opmerkingen
+### Opstelling
 elektronisch schema
 ![image](https://github.com/lanseAM/Linefollower/assets/114751410/c951b366-90cf-4dca-bfc6-40fd646eb019)
 
