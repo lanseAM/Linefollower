@@ -30,19 +30,29 @@ Probeer een commando uit "debug" om te zien of je response krijgt.
 
 #### commando's
 debug [on/off]  --> Je krijgt de onderstaande parameters te zien die laatst waren ingesteld, de positie van de sensor tov de zwarte lijn en de calculation time
+
 start  --> LF begint te rijden
+
 stop  --> LF stopt met rijden
+
 set cycle [µs]  --> Bepalen hoelang er min aan 1 procedure mag gewerkt worden
+
 set power [0..255]  --> Snelheid, hoe hoger hoe sneller LF zal rijden
+
 set diff [0..1]  --> Nauwkeurigheid van het volgen van de lijn in een bocht, hoe hoger des te meer toegeeflijk behandelt hij de kromming van de lijn in de bocht.
+
 set kp [0..]  --> Hierbij mag die sterk bijsturen in het geval van een grote fout of dus afwijking. Mist de LF vaak zijn bocht dan mag dit hoger gezet worden.
+
 set ki [0..]  --> Kijkt hoelang een fout zich blijft voordoen tijdens een afwijking, hoe langer de duur hoe sterker of dus sneller LF zal bijregelen.
+
 set kd [0..]  --> In dit geval zal de lijnvolger analyseren hoe snel de fout is veranderd ten opzichte van de vorige cyclus. Indien het verschil met de fout van de vorige cyclus aanzienlijk is, zal er een krachtige bijsturing plaatsvinden. Als daarentegen het verschil relatief klein is, zal de bijsturing milder zijn.
+
 calibrate black  --> Leert de sensor zwart herkennen
 calibrate white  --> Leert de sensor wit herkennen
 
 ### kalibratie
 uitleg kalibratie  
+
 Houdt de QTR-8A sensor boven het zwarte oppervlak en eens verbonden in de bluetooth monitor geef je het commando "calibrate black" door.
 Experimenteer met de hoogte van de sensor boven zwart en controleer met debug of de waarden bij "Black" richting de 1000 gelegen zijn.
 Nu doe je hetzelfde voor wit met commando "calibrate white" en controleer je opnieuw met gewenste waarden onder 50 richting 20.
@@ -56,4 +66,5 @@ power 96; kp 13.25; ki 2.5; kd 3; diff 0.02
 
 ### start/stop button
 uitleg locatie + werking start/stop button
+
 De knop zit naast de schakelaar om de batterijspanning door het circuit te laten stromen. Bij een eerste klik zal LF starten mits batterijspanning aanstaat en 2de klik om te stoppen.
