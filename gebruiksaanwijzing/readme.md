@@ -48,6 +48,7 @@ set ki [0..]  --> Kijkt hoelang een fout zich blijft voordoen tijdens een afwijk
 set kd [0..]  --> In dit geval zal de lijnvolger analyseren hoe snel de fout is veranderd ten opzichte van de vorige cyclus. Indien het verschil met de fout van de vorige cyclus aanzienlijk is, zal er een krachtige bijsturing plaatsvinden. Als daarentegen het verschil relatief klein is, zal de bijsturing milder zijn.
 
 calibrate black  --> Leert de sensor zwart herkennen
+
 calibrate white  --> Leert de sensor wit herkennen
 
 ### kalibratie
