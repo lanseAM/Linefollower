@@ -11,6 +11,7 @@ https://www.batterijimport.nl/blog/post/10-must-know-veiligheidsissues-over-li-i
 ### draadloze communicatie
 #### verbinding maken
 uitleg over het verbinden van de robot met laptop / smartphone
+
 Open de app op je phone   
 
 ![image](https://github.com/lanseAM/Linefollower/assets/114751410/f5babd2b-af57-4305-b93a-ec7b08a40322)
