@@ -13,7 +13,7 @@ Begin aan het ontwerpen van de chassis
 ### stap 4
 Knip een gewenst formaat uit de buitenkant van een stevige kartonnen kaft. 
 
-Afmeting: 12.5x9
+Afmeting: 12cmx8cm
 ### stap 5
 Soldeer alles zodat dit niet achteraf moet als de onderdelen erop zitten.
 Dus ook draadjes aan de + en - van de motoren als ook de + van de batterijhouder aan de schakelaar en een extra draadje aan de schakelaar die later in de wago klem wordt bevestigd.
