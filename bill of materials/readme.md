@@ -3,9 +3,9 @@
 
 |volgnummer|naam              |omschrijving|nieuw/recup|kostprijs/stuk|aantal|subtotaal|
 |----------|----              |------------|-----------|--------------|------|---------|
-|         1|  Arduino Leonardo|  uC          |    recup  |     28.44    |    1  |     28.44    |
+|         1|  Arduino Mega 2560|  uC          |    recup  |     28.44    |    1  |     47.5   |
 |         2|   Motoren Pololu | DC 30:1      |  nieuw    |     16.95     |  2    | 33.90   |
-|         3|   HC-06          |bleutooth module |   nieuw   |     6.79|    1  |  6.79  |
+|         3|   HC-05        |bleutooth module |   nieuw   |     6.79|    1  |  6.79  |
 |         4|    DRV8833       |H-brug |   nieuw   |     5.04|    1  |  5.04  |
 |         5|   Motor brackets pair    | |   nieuw   |     2.95|    2  |  2.95  |
 |         6|   QTR-8A          |sensor |   nieuw   |     9.95|    1  |  9.95  |
