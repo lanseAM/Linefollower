@@ -13,7 +13,7 @@ elektronisch schema
 
 
 ### Arduino code:
-
+-----------
 ###HC-05
 #include <SoftwareSerial.h>
 SoftwareSerial EEBlue(18, 19); // RX | TX
@@ -38,7 +38,7 @@ void loop()
 }
 
 
-
+-----------
 ###HC-06
 #include <SoftwareSerial.h>
 SoftwareSerial hc06(2,3);
