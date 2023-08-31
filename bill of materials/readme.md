@@ -22,3 +22,4 @@
 |        17| LED | |   recup   |    |    1  |    |
 |        18| anti-static black tape | |   recup   |    |    1  |    |
 |        19| wago-klemmen | |   recup   |    |    2  |    |
+|        20| ball caster |  |   nieuw   | 0.99   |    2  |  1.98  |
