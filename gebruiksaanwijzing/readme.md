@@ -11,7 +11,14 @@ https://www.batterijimport.nl/blog/post/10-must-know-veiligheidsissues-over-li-i
 ### draadloze communicatie
 #### verbinding maken
 uitleg over het verbinden van de robot met laptop / smartphone
-
+Open de app op je phone ![image](https://github.com/lanseAM/Linefollower/assets/114751410/f5babd2b-af57-4305-b93a-ec7b08a40322)
+Bij "Devices" zoek je naar de HC-05 kijk zeker of je bluetooth aanstaat en moest deze er niet bij staan probeer er eerst zonder app verbinding mee te maken dan vraagt die een code vul "1234" of "0000" in. Ga vervolgens terug in de app.
+![image](https://github.com/lanseAM/Linefollower/assets/114751410/6eeb92fe-5e6c-4ab2-948a-d89bfd89e407)
+Klik op het apparaat
+![image](https://github.com/lanseAM/Linefollower/assets/114751410/48c071fe-e5d5-46f3-ada2-a7e69641bd46)
+Groene lijn naast om te weten of deze aan staat en verbinding kan maken.
+Nu zou je vanzelf in de monitor moeten komen en krijg je "ready".
+Probeer een commando uit "debug" om te zien of je response krijgt.
 
 #### commando's
 debug [on/off]  
