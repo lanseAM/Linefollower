@@ -1,15 +1,45 @@
 # draadloze communicatie proof of concept
 minimale hard- en software waarmee aangetoond wordt dat duplex kan gecommuniceerd worden tussen de microcontroller en een [smartphone], gebruik makend van [MIT AI2 Companion] (in te vullen)
 <br />
+
 ### configuratie
-Voor de communicatie werd een HC-06 gebruikt met de app MIT AI2 Companion op een smartphone
+Voor de communicatie plan B werd een HC-05 (HC-06 plan A)gebruikt met de app serial bluetooth monitor van de appstore
+![image](https://github.com/lanseAM/Linefollower/assets/114751410/c8709df8-33d1-4279-b0cb-9af0c225a805)
+
+
 ### opmerkingen
 elektronisch schema
-![image](https://user-images.githubusercontent.com/114751410/199984666-7941ed86-f995-478f-a70d-89d56fc940be.png) 
-
-code
+![image](https://github.com/lanseAM/Linefollower/assets/114751410/c951b366-90cf-4dca-bfc6-40fd646eb019)
 
 
+### Arduino code:
+
+###HC-05
+#include <SoftwareSerial.h>
+SoftwareSerial EEBlue(18, 19); // RX | TX
+ 
+void setup()
+{
+  Serial.begin(9600);
+  EEBlue.begin(38400);  //Baud Rate for command Mode. 
+  Serial.println("Enter AT commands!");
+}
+ 
+void loop()
+{
+ 
+  // Feed any data from bluetooth to Terminal.
+  if (EEBlue.available())
+    Serial.write(EEBlue.read());
+ 
+  // Feed all data from termial to bluetooth
+  if (Serial.available())
+    EEBlue.write(Serial.read());
+}
+
+
+
+###HC-06
 #include <SoftwareSerial.h>
 SoftwareSerial hc06(2,3);
 String cmd="";
@@ -48,5 +78,4 @@ void loop(){
 
 
 
-### gebruiksaanwijzing
-http://www.aranacorp.com/en/create-an-app-with-app-inventor-2/
+
