@@ -5,6 +5,8 @@
 <br />
 | Front | Side |
 | ------------- | ------------- |
+:-------------------------:|:-------------------------:
+![](outputs/output_Biotouch/18-15_02-02-2018/Identification/ITALIC/ITALIC_movementPoints_cmc.png)  |  ![](outputs/output_Biotouch/18-15_02-02-2018/Identification/BLOCK_LETTERS/BLOCK_LETTERS_movementPoints_cmc.png)
 | ![371225801_260758966841920_7651169012521235458_n](https://github.com/lanseAM/Linefollower/assets/114751410/68f9d8bb-5088-4be0-8f8e-e530b8b7f81e)
 |![371239029_1301327923880199_694351991832550662_n](https://github.com/lanseAM/Linefollower/assets/114751410/4153e38a-8d02-4a6a-babb-5df909d9b6a0)
  |
